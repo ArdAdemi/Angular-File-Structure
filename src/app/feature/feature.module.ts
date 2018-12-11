@@ -2,14 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import {FeatureRoutingModule} from './feature-routing.module';
-import { AuthComponent } from './auth/auth.component';
 import { LoginComponent } from './login/login.component';
+import {AuthenticationModule} from '../core/authentication';
 
 @NgModule({
   imports: [
     CommonModule,
-    FeatureRoutingModule
+    FeatureRoutingModule,
+    AuthenticationModule
   ],
-  declarations: [HomeComponent, AuthComponent, LoginComponent]
+  declarations: [HomeComponent, LoginComponent]
 })
 export class FeatureModule { }

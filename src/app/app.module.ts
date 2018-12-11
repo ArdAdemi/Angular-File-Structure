@@ -6,6 +6,7 @@ import {CoreModule} from './core/core.module';
 import {SharedModule} from './shared/shared.module';
 import {FeatureModule} from './feature/feature.module';
 import {AppRoutingModule} from './app-routing.module';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,9 +17,10 @@ import {AppRoutingModule} from './app-routing.module';
     CoreModule,
     SharedModule,
     FeatureModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
