@@ -46,7 +46,7 @@ export class TokenStorage {
    * Remove tokens
    */
   public clear() {
-    localStorage.removeItem('accessToken');
-    localStorage.removeItem('refreshToken');
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('refresh_token');
   }
 }

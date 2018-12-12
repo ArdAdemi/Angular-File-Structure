@@ -9,7 +9,7 @@ import {AuthenticationModule} from '../core/authentication';
   imports: [
     CommonModule,
     FeatureRoutingModule,
-    AuthenticationModule
+    AuthenticationModule,
   ],
   declarations: [HomeComponent, LoginComponent]
 })
